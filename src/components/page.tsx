@@ -1,10 +1,12 @@
+'use client'
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { ArrowRight, ChevronRight } from "lucide-react"
 
-export default function Home() {
+export function Page() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
       <div className="mx-auto max-w-[990px] px-4">
