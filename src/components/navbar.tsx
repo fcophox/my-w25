@@ -46,9 +46,24 @@ const menuItems = [
 
 export function Navbar() {
   return (
-    <div className="sticky bg-gray-950 top-0 z-50 py-6 w-full bg-gray-900/95 backdrop-blur supports-[backdrop-filter]:bg-gray-900/75 ">
-      <div className="max-w-4xl mx-auto container flex h-14 items-center justify-between">
+    <div className="sticky bg-gray-950 top-0 z-50 py-6 w-full bg-gray-950/95 backdrop-blur supports-[backdrop-filter]:bg-gray-950/75 ">
+      <div className="max-w-4xl p-4 mx-auto container flex h-14 items-center justify-between">
         <div className="flex items-center space-x-4">
+        <Sheet>
+            <SheetTrigger asChild>
+              <Button
+                variant="ghost"
+                className="px-0 text-base text-gray-300 hover:bg-gray-900 hover:text-gray-100 focus-visible:bg-gray-800 focus-visible:text-gray-100 focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+              >
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Alternar Menú</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[300px] bg-gray-900 text-gray-100">
+              <MobileNav />
+            </SheetContent>
+          </Sheet>
+          
           <Link href="/" className="flex items-center space-x-2">
             <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4495 19.9745L15.9414 7.46627L18.0031 5.40454L35.4888 22.8901H17.3689V19.9745H28.4495Z" fill="url(#paint0_linear_8847_560)"/>
@@ -64,30 +79,17 @@ export function Navbar() {
 
             <div>
               <span className="font-bold text-gray-100 sm:inline-block">
-                fcophox <span className="text-xs text-gray-400 font-thin	">V3.0.0</span>
+                fcophox <span className="text-xs text-gray-400 font-thin">V3.0.0</span>
               </span>
             </div>
           </Link>
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button
-                variant="ghost"
-                className="px-0 text-base text-gray-300 hover:bg-gray-800 hover:text-gray-100 focus-visible:bg-gray-800 focus-visible:text-gray-100 focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
-              >
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Alternar Menú</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] bg-gray-900 text-gray-100">
-              <MobileNav />
-            </SheetContent>
-          </Sheet>
+
         </div>
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             {menuItems.map((item) => (
               <NavigationMenuItem key={item.title}>
-                <NavigationMenuTrigger className="bg-gray-900 text-gray-300 hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-800 focus:text-gray-100">
+                <NavigationMenuTrigger className="bg-gray-950 text-gray-300 hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-800 focus:text-gray-100">
                   {item.title}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -109,7 +111,7 @@ export function Navbar() {
                   href="/portafolio" 
                   className={cn(
                     navigationMenuTriggerStyle(),
-                    "bg-gray-900 text-gray-300 hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-800 focus:text-gray-100"
+                    "bg-gray-950 text-gray-300 hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-800 focus:text-gray-100"
                   )}
                 >
                   Portafolio
@@ -149,14 +151,14 @@ function MobileNav() {
             <Link
               key={subItem.title}
               href={subItem.href}
-              className="text-gray-300 hover:text-gray-100"
+              className="bg-gray-950 text-gray-300 hover:text-gray-100"
             >
               {subItem.title}
             </Link>
           ))}
         </div>
       ))}
-      <Link href="/portafolio" className="font-medium text-gray-100">
+      <Link href="/portafolio" className="bg-gray-950 font-medium text-gray-100">
         Portafolio
       </Link>
     </div>
@@ -173,13 +175,13 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100",
+            "bg-gray-950 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100",
             className
           )}
           {...props}
         >
           <div className="text-sm font-medium leading-none text-gray-100">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-gray-300">
+          <p className="bg-gray-950 line-clamp-2 text-sm leading-snug text-gray-300">
             {children}
           </p>
         </a>

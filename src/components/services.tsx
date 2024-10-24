@@ -1,50 +1,65 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card"
-import { ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
+import { ArrowRight } from 'lucide-react'
 
-export default function Services() {
+export default function Component() {
+  const items = [
+    { text: 'Investigación en Experiencias de usuario', color: 'bg-gray-900' },
+    { text: 'Revisión de arquitectura de la información', color: 'bg-gray-900' },
+    { text: 'Desarrollo de productos digitales', color: 'bg-gray-900' },
+    { text: 'Diseño de interfaces', color: 'bg-gray-900' },
+    { text: 'Facilitación de Talleres en UX', color: 'bg-gray-900' },
+    { text: 'Implementación de Design System', color: 'bg-gray-900' },
+    { text: 'Consultoría en IA e Innovación', color: 'bg-gray-900' }
+  ]
+
+  const totalHeight = items.length * 36 // 36px es la altura de cada elemento
+
   return (
-    <article className="bg-gray-950 text-gray-200 py-12 pt-32 pb-32">
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-5xl font-bold">Proyectos seleccionados</h1>
-          <Button className="bg-teal-400 hover:bg-teal-500 text-gray-900 rounded-full">
-            Ver más casos
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
-        <p className="text-xl text-gray-400 mb-12">
-          Un vistazo a algunos de mis proyectos desde el año 2018 hasta hoy.
-        </p>
-        
-        <div className="grid grid-cols-1 gap-8">
-            <Card className="bg-gray-950 text-white border border-gray-900 rounded-3xl p-6">
-              <CardContent className="p-0">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="p-6">
-                    <CardTitle className="text-3xl mb-4">
-                        Servicios en los que puedo ayudarte
-                    </CardTitle>
-                    <CardDescription className="text-gray-400 text-lg mb-6">
-                    The Joke Tax
-                    </CardDescription>
-                    <Button className="bg-teal-400 hover:bg-teal-500 text-gray-900 rounded-full">
-                        Revisa los servicios
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </div>
-                  <div className="bg-gray-800 flex items-center justify-center">
-              
-
-
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-      
-        </div>
-      </div>
-    </article>
+    <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
+      <Card className="bg-gray-950 text-white border border-gray-900 rounded-3xl">
+        <CardContent className="p-0">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
+            <div className="space-y-2 p-12">
+              <h2 className="text-3xl font-bold mb-4">Servicios en los que puedo ayudarte</h2>
+              {/* <p className="text-xl text-gray-400">The Joke Tax</p> */}
+              <Button className="bg-teal-400 hover:bg-teal-500 text-gray-900 rounded-full">
+                Revisa los servicios
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+            <div className="w-full md:w-1/1 h-80 overflow-hidden relative text-center">
+              <motion.div
+                animate={{
+                  y: [-totalHeight, 100],
+                }}
+                transition={{
+                  y: {
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    duration: items.length * 1, // 1 segundo por elemento
+                    ease: "linear"
+                  }
+                }}
+                className="absolute"
+              >
+                {[...items, ...items].map((item, index) => (
+                  <motion.div
+                    key={`${item.text}-${index}`}
+                    className={`inline-block items-center justify-center rounded-full ${item.color} p-4 mb-4`}
+                  >
+                    <span className="text-lg font-semibold whitespace-nowrap">{item.text}</span>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
   )
 }

@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-        <body className={`bg-gray-900 ${sora.className}`}>
+        <body className={`bg-gray-950 ${sora.className}`}>
 
         {/* {children} */}
         <Navbar/>

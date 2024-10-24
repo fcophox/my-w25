@@ -1,4 +1,3 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import AvatarFcophox from "@/components/AvatarFcophox"
 
@@ -26,7 +25,6 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
 
           <AvatarFcophox />
-
 
             <div className="pt-12">
               <h3 className="font-semibold mb-4">Contacto</h3>
