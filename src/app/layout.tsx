@@ -4,14 +4,8 @@ import { Sora } from 'next/font/google'
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Navbar } from '@/components/navbar';
-import Header from '@/components/header'
-import Bio from '@/components/bio';
-import Cases from '@/components/selected-projects'
-import Articles from '@/components/article';
+import {Navbar} from '@/components/navbar';
 import Footer from "@/components/footer"
-import Services from '@/components/services';
-
 
 const sora = Sora({ subsets: ['latin'] })
 
@@ -41,16 +35,15 @@ export default function RootLayout({
   return (
     <html lang="es">
         <body className={`bg-gray-950 ${sora.className}`}>
-
         {/* {children} */}
         <Navbar/>
-        <Header />
-        <Bio />
-
-        <Cases />
-        <Articles />
-        <Services/>
-        <Footer />
+        <main className="p-4">
+          {children}
+          <Footer />
+        </main>
+        
+      
+     
       </body>
     </html>
   );

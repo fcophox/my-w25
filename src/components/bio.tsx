@@ -7,6 +7,9 @@ export default function Bio() {
     <article className="bg-gray-950 text-gray-200 py-12 pt-32 pb-32">
       <div className="max-w-4xl mx-auto px-4">
         <div className="">
+          <p className="text-m font-regular text-teal-400 mb-2">
+            Biografía
+          </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Diseño de productos desde UX
           </h1>

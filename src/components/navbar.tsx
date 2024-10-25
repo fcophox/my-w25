@@ -26,20 +26,20 @@ const menuItems = [
   {
     title: "Sobre mí",
     items: [
-      { title: "Experiencia", href: "/sobre-mi/experiencia" },
-      { title: "Habilidades", href: "/sobre-mi/habilidades" },
-      { title: "Educación", href: "/sobre-mi/educacion" },
+      { title: "Experiencia", href: "/about-me/experience" },
+      { title: "Habilidades", href: "/about-me/skills" },
+      { title: "Educación", href: "/about-me/study/" },
     ],
   },
   {
     title: "Casos de estudio",
     items: [
-      { title: "Proyecto 1", href: "/casos-de-estudio/proyecto-1" },
-      { title: "Proyecto 2", href: "/casos-de-estudio/proyecto-2" },
-      { title: "Proyecto 3", href: "/casos-de-estudio/proyecto-3" },
-      { title: "Proyecto 4", href: "/casos-de-estudio/proyecto-4" },
-      { title: "Proyecto 5", href: "/casos-de-estudio/proyecto-5" },
-      { title: "Proyecto 6", href: "/casos-de-estudio/proyecto-6" }
+      { title: "Proyecto 1", href: "/case-studies/proyecto-1" },
+      { title: "Proyecto 2", href: "/case-studies/proyecto-2" },
+      { title: "Proyecto 3", href: "/case-studies/proyecto-3" },
+      { title: "Proyecto 4", href: "/case-studies/proyecto-4" },
+      { title: "Proyecto 5", href: "/case-studies/proyecto-5" },
+      { title: "Proyecto 6", href: "/case-studies/proyecto-6" }
     ],
   },
 ]
@@ -108,7 +108,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link 
-                  href="/portafolio" 
+                  href="/portfolio" 
                   className={cn(
                     navigationMenuTriggerStyle(),
                     "bg-gray-950 text-gray-300 hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-800 focus:text-gray-100"
@@ -158,7 +158,7 @@ function MobileNav() {
           ))}
         </div>
       ))}
-      <Link href="/portafolio" className="bg-gray-950 font-medium text-gray-100">
+      <Link href="/portfolio" className="bg-gray-950 font-medium text-gray-100">
         Portafolio
       </Link>
     </div>

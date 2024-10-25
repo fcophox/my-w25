@@ -1,10 +1,10 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight } from "lucide-react"
-import mediumBlog from "./medium-blog.json"
+import mediumBlog from "../MediumArticles/MediumArticles.json"
 
 
-export default function Articles() {
+export default function MediumArticles() {
   return (
     <article className="bg-gray-950 text-gray-200 py-12 pt-32 pb-32">
       <div className="max-w-4xl mx-auto px-4">
