@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button"
 import AvatarFcophox from "@/components/AvatarFcophox"
 
 
 import Link from "next/link"
-import { Plus, Send } from "lucide-react"
+import { Send } from "lucide-react"
 
 export default function Footer() {
   return (
