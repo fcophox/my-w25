@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nameService": "Investigación en Experiencias de usuario"
+    },
+    {
+        "id": 2,
+        "nameService": "Optimización de arquitectura de la información"
+    },
+    {
+        "id": 3,
+        "nameService": "Diseño de productos digitales"
+    },
+    {
+        "id": 4,
+        "nameService": "Diseño de interfaces"
+    },
+    {
+        "id": 5,
+        "nameService": "Facilitación de Talleres en UX"
+    },
+    {
+        "id": 6,
+        "nameService": "Implementación de Design System"
+    },
+    {
+        "id": 7,
+        "nameService": "Maquetación y prototipado UI con código"
+    },
+    {
+        "id": 8,
+        "nameService": "Consultoría en IA e Innovación"
+    }
+]

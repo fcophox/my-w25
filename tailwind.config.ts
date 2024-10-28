@@ -14,7 +14,9 @@ const config: Config = {
   			foreground: 'hsl(var(--foreground))',
   			teal: {
   				'400': '#2dd4bf',
-  				'500': '#14b8a6'
+  				'500': '#14b8a6',
+				'800': '#8890E0',
+  				'900': '#6D75C5'
   			},
   			card: {
   				DEFAULT: 'hsl(var(--card))',

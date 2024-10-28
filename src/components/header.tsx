@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Card } from "@/components/ui/card"
 import AvatarFcophox from "@/components/AvatarFcophox"
 
+
 const projects = [
   { id: 1, image: '/images/Bio/brand1.png', alt: 'Brand 1' },
   { id: 2, image: '/images/Bio/brand2.png', alt: 'Brand 2' },

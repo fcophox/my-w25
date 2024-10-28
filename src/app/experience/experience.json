@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "position": "Head of UX",
+    "date": "Abril 2024 a la fecha"
+  },
+  {
+    "id": 2,
+    "position": "Product Designer & UX Strategy",
+    "date": "Abril 2021 a enero 2023"
+  },
+  {
+    "id": 3,
+    "position": "UX Design & UI Designer",
+    "date": "Marzo 2020 a marzo 2021"
+  },
+  {
+    "id": 4,
+    "position": "Docente & mentor en UX/UI",
+    "date": "Marzo 2019 a diciembre 2019"
+  },
+  {
+    "id": 5,
+    "position": "Lead UX & UX Designer",
+    "date": "Marzo 2018 a febrero 2020"
+  },
+  {
+    "id": 6,
+    "position": "Director de Arte & Director de Proyecto Digitales",
+    "date": "Septiembre 2014 a marzo 2018"
+  },
+  {
+    "id": 7,
+    "position": "Diseñador Gráfico",
+    "date": "Junio 2011 a abril 2014"
+  }
+]

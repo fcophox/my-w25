@@ -3,11 +3,11 @@ import AvatarFcophox from "@/components/AvatarFcophox"
 
 
 import Link from "next/link"
-import { Send } from "lucide-react"
+import { Plus, Send } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-200 py-12 pt-32 pb-32">
+    <footer className="bg-gray-950 text-gray-200 py-12 pt-12 pb-32">
       <div className="container max-w-4xl mx-auto px-4">
         <div className="bg-gray-900 rounded-3xl p-8 mb-12">
           <h2 className="text-4xl font-bold text-center mb-8">¿Tienes algún proyecto en mente?</h2>
@@ -16,16 +16,14 @@ export default function Footer() {
           </p>
           <div className="flex justify-center">
             <Button className="bg-teal-400 hover:bg-teal-500 text-gray-900 rounded-full">
-              Contáctame <span className="ml-2">+</span>
+              <a href="mailto:hi@fcophox.com">Contáctame <span className="ml-2">+</span></a>
             </Button>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-16 pb-16">
           <div className="lg:col-span-2 space-y-4">
-
-          <AvatarFcophox />
-
+            <AvatarFcophox />
             <div className="pt-12">
               <h3 className="font-semibold mb-4">Contacto</h3>
               <Link href="mailto:hi@fcophox.com" className="text-teal-400 hover:text-teal-300 transition-colors flex items-center justify-start">
@@ -64,7 +62,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
           <p className="text-sm text-gray-500">_fcoPhox - All rights pending - 2024</p>
-          {/* <img src="/placeholder.svg" alt="fcoPhox logo" className="mx-auto mt-4 h-8" /> */}
+          <img src="/images/Brand/copylogo.svg" alt="fcoPhox logo" className="mx-auto mt-4 h-8" />
         </div>
       </div>
     </footer>

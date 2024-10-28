@@ -13,11 +13,29 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="bg-gray-950 text-white py-8 min-h-screen">
- 
-      <div className="max-w-4xl mx-auto mb-12 px-8 pt-9">
+    <div className="bg-gray-950 text-white py-8">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <div className="bg-gray-950 text-gray-200 py-12 pt-32 pb-32">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="">
+            {/* <p className="text-m font-regular mb-2">
+              Sobre mi — Estudios
+            </p> */}
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Portafolio
+            </h1>
+            <p className="text-xl text-gray-400 mb-12">
+              Con más de 12 años dedicados a la gestión y desarrollo de proyectos digitales.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div className="max-w-4xl mx-auto mb-12 px-8 pt-9">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.slice(0, 2).map((project) => (
             <Card key={project.id} className="bg-gray-800 overflow-hidden border-0  rounded-3xl">
               <div className="aspect-square relative">
@@ -66,10 +84,6 @@ export default function Portfolio() {
           </Card>
 
         </div>
-
-
-
-
       </div>
     </div>
   )

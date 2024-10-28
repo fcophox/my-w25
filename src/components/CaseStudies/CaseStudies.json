@@ -3,36 +3,42 @@
     "id": 1,
     "title": "RAG en Logística",
     "description": "Una empresa logística internacional maneja una gran cantidad de información relacionada con estados logísticos, facturas y datos de repartidores.",
-    "imageUrl": "/images/CasesStudies/06.png"
+    "imageUrl": "/images/CasesStudies/01.png"
   },
   {
     "id": 2,
     "title": "Menú digital para pizzería",
     "description": "Este proyecto fue desarrollado para una Pizzería Italiana, con el objetivo de crear un sistema de entrega eficiente dentro de la ciudad.",
-    "imageUrl": "/images/CasesStudies/05.png"
+    "imageUrl": "/images/CasesStudies/02.png"
   },
   {
     "id": 3,
     "title": "Plataforma de reclutamiento",
     "description": "Este es un proyecto desarrollado para el Diplomado Diseño basado en datos realizados entre julio 2022 hasta enero 2023 en la Universidad del Desarrollo.",
-    "imageUrl": "/images/CasesStudies/04.png"
-  },
-  {
-    "id": 4,
-    "title": "App de Gestión de Tareas",
-    "description": "Creación de una aplicación móvil de gestión de tareas con sincronización en la nube, alcanzando 100,000 descargas en el primer mes.",
     "imageUrl": "/images/CasesStudies/03.png"
   },
   {
+    "id": 4,
+    "title": "Plataforma de Eventos",
+    "description": "Este proyecto se centró en el desarrollo de la interfaz de usuario (UI), una plataforma que permite a los usuarios descubrir y participar en eventos sociales.",
+    "imageUrl": "/images/CasesStudies/04.png"
+  },
+  {
     "id": 5,
-    "title": "Diseño de Interfaz para IoT",
-    "description": "Diseño de interfaz de usuario para un sistema de hogar inteligente, mejorando la facilidad de uso y reduciendo las llamadas de soporte en un 30%.",
-    "imageUrl": "/images/CasesStudies/02.png"
+    "title": "Comunidad de ciclismo",
+    "description": "Este producto digital fue realizado como Consultor UX y Diseñador UI, con el objetivo de crear una aplicación que ofrezca un ambiente seguro e informativo para ciclistas urbanos.",
+    "imageUrl": "/images/CasesStudies/05.png"
   },
   {
     "id": 6,
-    "title": "Rediseño de Experiencia de Compra en Línea",
-    "description": "Optimización del proceso de compra para un importante minorista en línea, aumentando las tasas de conversión en un 35%.",
-    "imageUrl": "/images/CasesStudies/01.png"
+    "title": "Visualizador Covid-19",
+    "description": "Este proyecto independiente fue realizado para la Start-ups Rukma.Digital con el objetivo de democratizar el acceso a la información oficial proporcionada por el Gobierno de Chile.",
+    "imageUrl": "/images/CasesStudies/06.png"
+  },
+  {
+    "id": 7,
+    "title": "Plataforma para alergias",
+    "description": "Este producto digital fue desarrollado como parte del Diplomado en UX Design en la Universidad Finis Terrae en la entrega final el año 2019º.",
+    "imageUrl": "/images/CasesStudies/07.png"
   }
 ]

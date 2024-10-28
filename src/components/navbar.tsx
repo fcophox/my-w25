@@ -26,9 +26,9 @@ const menuItems = [
   {
     title: "Sobre mí",
     items: [
-      { title: "Experiencia", href: "/about-me/experience" },
-      { title: "Habilidades", href: "/about-me/skills" },
-      { title: "Educación", href: "/about-me/study/" },
+      { title: "Experiencia", href: "/experience" },
+      { title: "Habilidades", href: "/skills" },
+      { title: "Estudios", href: "/study/" },
     ],
   },
   {
@@ -53,7 +53,7 @@ export function Navbar() {
             <SheetTrigger asChild>
               <Button
                 variant="ghost"
-                className="px-0 text-base text-gray-300 hover:bg-gray-900 hover:text-gray-100 focus-visible:bg-gray-800 focus-visible:text-gray-100 focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+                className="px-0 text-base text-gray-300 hover:bg-gray-900 hover:text-gray-100 focus-visible:bg-gray-950 focus-visible:text-gray-100 focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
               >
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Alternar Menú</span>
@@ -77,7 +77,7 @@ export function Navbar() {
               </defs>
             </svg>
 
-            <div>
+            <div> 
               <span className="font-bold text-gray-100 sm:inline-block">
                 fcophox <span className="text-xs text-gray-400 font-thin">V3.0.0</span>
               </span>
@@ -89,11 +89,11 @@ export function Navbar() {
           <NavigationMenuList>
             {menuItems.map((item) => (
               <NavigationMenuItem key={item.title}>
-                <NavigationMenuTrigger className="bg-gray-950 text-gray-300 hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-800 focus:text-gray-100">
+                <NavigationMenuTrigger className="bg-gray-950 text-gray-300 hover:bg-gray-950 hover:text-gray-100 focus:bg-gray-950 focus:text-gray-100">
                   {item.title}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-gray-800">
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-gray-950">
                     {item.items.map((subItem) => (
                       <ListItem
                         key={subItem.title}
@@ -111,7 +111,7 @@ export function Navbar() {
                   href="/portfolio" 
                   className={cn(
                     navigationMenuTriggerStyle(),
-                    "bg-gray-950 text-gray-300 hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-800 focus:text-gray-100"
+                    "bg-gray-950 text-gray-300 hover:bg-gray-950 hover:text-gray-100 focus:bg-gray-950 focus:text-gray-100"
                   )}
                 >
                   Portafolio
@@ -122,7 +122,7 @@ export function Navbar() {
         </NavigationMenu>
         <div className="flex items-center">
           <Button className="bg-teal-400 hover:bg-teal-500 text-gray-900 rounded-full">
-            + Contacto
+              <a href="mailto:hi@fcophox.com">Contáctame <span className="ml-2">+</span></a>
           </Button>
         </div>
       </div>
@@ -135,7 +135,7 @@ function MobileNav() {
     <div className="flex flex-col space-y-3">
       <Link href="/" className="flex items-center space-x-2">
         <Image
-          src="/placeholder.svg?height=32&width=32"
+          src="/images/Brand/logotipo .svg"
           alt="Fcophox Logo"
           width={32}
           height={32}
@@ -175,7 +175,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "bg-gray-950 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100",
+            "bg-gray-950 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-900 hover:text-gray-100 focus:bg-gray-950 focus:text-gray-100",
             className
           )}
           {...props}
