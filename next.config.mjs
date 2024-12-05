@@ -1,12 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    typescript: {
-        // !! WARN !!
-        // Dangerously allow production builds to successfully complete even if
-        // your project has type errors.
-        // !! WARN !!
-        ignoreBuildErrors: true,
-      },
+  output: 'export',
+  images: {
+    unoptimized: true,  // Añade esto para imágenes en export estático
+  },
+  assetPrefix: '/', // Añade esto si vas a servir desde un subdirectorio
+  basePath: '', // Configura esto si tu sitio no está en la raíz del dominio
+  typescript: {
+    ignoreBuildErrors: true,
+
+  },
+  trailingSlash: true,  // Añade esto para generar /study/index.html
+  assetPrefix: '/',    // Para recursos estáticos
+
+      
 };
 
 export default nextConfig;
+
+

@@ -20,12 +20,14 @@ export default function MediumArticles() {
           // eslint-disable-next-line react/jsx-key
           <ul className="space-y-4">
               <li className="">
-                <a href={article.imageLink} target="_blank" className="flex items-center justify-between border-b border-gray-800 pb-4">
+                <a href={article.imageLink} target="_blank" className="flex items-center justify-between border-b border-gray-800 pb-4 hover:text-teal-800">
                   <div>
                     <p className="text-sm text-gray-400">{article.date}</p>
                     <h3 className="text-xl font-semibold">{article.title}</h3>
                   </div>
-                  <Button className="bg-teal-400 hover:bg-teal-500 text-gray-900 rounded-full px-3"><ArrowUpRight className="h-4 w-4"/></Button>
+                  <Button className="bg-gray-900 hover:bg-gray-900 border-1 border-teal-400 border:bg-teal-500 text-teal-400 rounded-full px-3">
+                    <ArrowUpRight className="h-4 w-4"/>
+                  </Button>
                 </a>
               </li>
           </ul>

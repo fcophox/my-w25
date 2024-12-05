@@ -3,42 +3,49 @@
     "id": 1,
     "title": "RAG en Logística",
     "description": "Una empresa logística internacional maneja una gran cantidad de información relacionada con estados logísticos, facturas y datos de repartidores.",
-    "imageUrl": "/images/CasesStudies/01.png"
+    "imageUrl": "/images/CasesStudies/logistic/home-logistic.png",
+    "link": "/logistic"
   },
   {
     "id": 2,
     "title": "Menú digital para pizzería",
     "description": "Este proyecto fue desarrollado para una Pizzería Italiana, con el objetivo de crear un sistema de entrega eficiente dentro de la ciudad.",
-    "imageUrl": "/images/CasesStudies/02.png"
+    "imageUrl": "/images/CasesStudies/delivery/home-delivery.png",
+    "link": "/delivery"
   },
   {
     "id": 3,
     "title": "Plataforma de reclutamiento",
     "description": "Este es un proyecto desarrollado para el Diplomado Diseño basado en datos realizados entre julio 2022 hasta enero 2023 en la Universidad del Desarrollo.",
-    "imageUrl": "/images/CasesStudies/03.png"
+    "imageUrl": "/images/CasesStudies/recruitment/home-recruitment.png",
+    "link": "/recruitment"
   },
   {
     "id": 4,
     "title": "Plataforma de Eventos",
     "description": "Este proyecto se centró en el desarrollo de la interfaz de usuario (UI), una plataforma que permite a los usuarios descubrir y participar en eventos sociales.",
-    "imageUrl": "/images/CasesStudies/04.png"
+    "imageUrl": "/images/CasesStudies/events/home-events.png",
+    "link": "/events"
   },
   {
     "id": 5,
     "title": "Comunidad de ciclismo",
     "description": "Este producto digital fue realizado como Consultor UX y Diseñador UI, con el objetivo de crear una aplicación que ofrezca un ambiente seguro e informativo para ciclistas urbanos.",
-    "imageUrl": "/images/CasesStudies/05.png"
+    "imageUrl": "/images/CasesStudies/cyclists/home-cyclists.png",
+    "link": "/cyclists"
   },
   {
     "id": 6,
     "title": "Visualizador Covid-19",
     "description": "Este proyecto independiente fue realizado para la Start-ups Rukma.Digital con el objetivo de democratizar el acceso a la información oficial proporcionada por el Gobierno de Chile.",
-    "imageUrl": "/images/CasesStudies/06.png"
+    "imageUrl": "/images/CasesStudies/visualizer/home-visualizer.png",
+    "link": "/visualizer"
   },
   {
     "id": 7,
     "title": "Plataforma para alergias",
     "description": "Este producto digital fue desarrollado como parte del Diplomado en UX Design en la Universidad Finis Terrae en la entrega final el año 2019º.",
-    "imageUrl": "/images/CasesStudies/07.png"
+    "imageUrl": "/images/CasesStudies/allergies/home-allergies.png",
+    "link": "/allergies"
   }
 ]

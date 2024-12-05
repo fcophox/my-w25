@@ -5,7 +5,8 @@ import Link from "next/link"
 
 export default function Bio() {
   return (
-    <article className="bg-gray-950 text-gray-200 py-12">
+    <>
+    <article className="bg-gray-950 text-gray-200 py-12 personal">
       <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Diseño de productos desde UX
@@ -26,7 +27,7 @@ export default function Bio() {
                 <div className="rounded-full">
                   <img src="/images/Brand/uxpm.svg" alt="" />
                 </div>
-                <p className="text-teal-800 ">
+                <p className="text-teal-800">
                   Certificado en Experiencia de usuario en la UX Alliance por Ayer Viernes Chile.
                 </p>
               </div>
@@ -38,7 +39,7 @@ export default function Bio() {
               </p>
               
               <Link href="https://www.linkedin.com/in/fcophox/" target="_blank" passHref>
-                <Button className="bg-teal-400 hover:bg-teal-500 text-gray-900 rounded-full">
+                <Button className="bg-teal-400 hover:bg-gray-900 border-2 border-teal-400 border:bg-teal-500 text-gray-900 hover:text-teal-400 rounded-full">
                   Visita mi LinkedIn
                   <ArrowUpRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -48,6 +49,15 @@ export default function Bio() {
 
           </div>
       </div>
+ 
     </article>
+    {/* <style jsx>
+      {`
+      .personal{
+        backgroud:red;
+      }
+      `}
+    </style> */}
+    </>
   )
 }

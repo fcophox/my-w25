@@ -1,30 +1,52 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 
+import Light from "@/components/light";
 import {
   GraduationCap,
+  Home
 }from "lucide-react"; // Importamos los iconos de lucide-react
 
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 export default function Study() {
   return (
     <div className="bg-gray-950 text-white py-8">
-
-      <div className="bg-gray-950 text-gray-200 py-2 pt-24">
+     <Light/> 
+      <div className="bg-gray-950 text-gray-200 py-2 pt-12">
         <div className="max-w-4xl mx-auto px-4">
           <div className="">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Estudios
             </h1>
-            <p className="text-xl text-gray-400 mb-12">
-              Con más de 12 años dedicados a la gestión y desarrollo de proyectos digitales.
-            </p>
+
+            <div className="mb-4">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink href="/" className="flex text-teal-900  items-center hover:text-teal-500">
+                      <Home className="w-4 mr-2" />
+                      <span>Home</span>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator />
+                  <BreadcrumbItem>
+                    <BreadcrumbPage className="text-grey-900">Sobre mi</BreadcrumbPage>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+            </div>
+
           </div>
         </div>
       </div>
-
-
-
 
       <div className="bg-gray-950 text-gray-200 py-12 pt-32 pb-32">
         <div className="max-w-4xl mx-auto px-4">

@@ -1,45 +1,69 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import Bio from '@/components/Bio'
-import experiences from "../experience/experience.json"
-import services from "../experience/services.json"
+import experiences from "./experience.json"
+import services from "./services.json"
 
 
 
 
 import {
   ShoppingCart,
+  HandCoins,
   Stethoscope,
   GraduationCap,
   Package,
   ShieldCheck,
+  Home
 }from "lucide-react"; // Importamos los iconos de lucide-react
+import Light from '@/components/light';
 
 const rubros = [
   { name: "Retail", href: "#", icon: ShoppingCart },
-  { name: "Banca", href: "#", icon: ShoppingCart },
+  { name: "Banca", href: "#", icon: HandCoins },
   { name: "Salud", href: "#", icon: Stethoscope },
   { name: "Educación", href: "#", icon: GraduationCap },
   { name: "Ecommerce", href: "#", icon: Package },
   { name: "Seguros", href: "#", icon: ShieldCheck },
 ];
 
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 
 export default function Experience() {
   return (
     <div className="bg-gray-950 text-white py-8">
-
-
-      <div className="bg-gray-950 text-gray-200 py-2 pt-24">
+     <Light/> 
+      <div className="bg-gray-950 text-gray-200 py-2 pt-12">
         <div className="max-w-4xl mx-auto px-4">
           <div className="">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Experience
+            <h1 className="text-5xl md:text-5xl font-bold mb-4">
+              Experiencia
             </h1>
-            <p className="text-xl text-gray-400 mb-12">
-              Con más de 12 años dedicados a la gestión y desarrollo de proyectos digitales.
-            </p>
+
+            <div className="mb-4">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink href="/" className="flex text-teal-900  items-center hover:text-teal-500">
+                      <Home className="w-4 mr-2" />
+                      <span>Home</span>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator />
+                  <BreadcrumbItem>
+                    <BreadcrumbPage className="text-grey-900">Sobre mi</BreadcrumbPage>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+            </div>
           </div>
         </div>
       </div>
@@ -51,12 +75,12 @@ export default function Experience() {
             {/* Contenedor de la Imagen Placeholder */}
             <div className="w-full bg-gray-900 rounded-lg flex items-center justify-center relative">
               <div className="flex flex-col items-center justify-center text-gray-400">
-                <img src="/images/Brand/aboutme.png" alt="" />
+                <img src="/images/Brand/place.png" alt="" className="rounded-xl" />
               </div>
             </div>
             <p className="text-gray-400 text-sm mt-4 text-center">
-              Creado para aplicar la Metodología de Productos Digitales y sus
-              diferentes variantes y estados.
+             
+             Mi espacio de trabajo es más que un lugar: es donde nacen ideas, se toman decisiones y se enfrentan retos. Un rincón para crear, soñar y celebrar cada triunfo y disfrutar de los procesos.
             </p>
           </div>
 

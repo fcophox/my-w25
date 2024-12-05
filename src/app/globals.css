@@ -4,6 +4,14 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+
+  background-attachment: fixed;
+  background-image: url("/public/images/Brand/destello.png");
+  background-position: top;
+  background-repeat: no-repeat;
+
+
+
 }
 
 @layer utilities {
