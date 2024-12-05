@@ -2,22 +2,22 @@
 "use client"
 
 import Light from "@/components/light";
-import {
-  ShoppingCart,
-  Stethoscope,
-  GraduationCap,
-  Package,
-  ShieldCheck,
-}from "lucide-react"; // Importamos los iconos de lucide-react
+// import {
+//   ShoppingCart,
+//   Stethoscope,
+//   GraduationCap,
+//   Package,
+//   ShieldCheck,
+// }from "lucide-react"; // Importamos los iconos de lucide-react
 
-const rubros = [
-  { name: "Retail", href: "#", icon: ShoppingCart },
-  { name: "Banca", href: "#", icon: ShoppingCart },
-  { name: "Salud", href: "#", icon: Stethoscope },
-  { name: "Educación", href: "#", icon: GraduationCap },
-  { name: "Ecommerce", href: "#", icon: Package },
-  { name: "Seguros", href: "#", icon: ShieldCheck },
-];
+// const rubros = [
+//   { name: "Retail", href: "#", icon: ShoppingCart },
+//   { name: "Banca", href: "#", icon: ShoppingCart },
+//   { name: "Salud", href: "#", icon: Stethoscope },
+//   { name: "Educación", href: "#", icon: GraduationCap },
+//   { name: "Ecommerce", href: "#", icon: Package },
+//   { name: "Seguros", href: "#", icon: ShieldCheck },
+// ];
 
 
 
