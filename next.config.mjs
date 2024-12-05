@@ -11,9 +11,6 @@ const nextConfig = {
 
   },
   trailingSlash: true,  // Añade esto para generar /study/index.html
-  assetPrefix: '/',    // Para recursos estáticos
-
-      
 };
 
 export default nextConfig;
